@@ -1,15 +1,15 @@
 # Pushing the Limits
 
 - Tom Calloway
-  * engineer at HomeChef, a meal-kit delivery service in Chicago
-  * [github.com/modellurgist/presentations/]()
-  * modellurgist@gmail.com
+  * engineer at [HomeChef](https://www.homechef.com), a meal-kit delivery service in Chicago
+  * [github.com/modellurgist/published_presentations/](https://github.com/modellurgist/published_presentations/blob/master/pushing_the_limits.md)
+  * [LinkedIn](https://www.linkedin.com/in/tomcalloway/)
 
 ## foundation of the Calculus
-  - limit as epsilon -> 0
+  - limit of a function in terms of an approach to infinitely small delta
 
 ## extreme programming
-  - if a little is good, a little more is better, what if we did it all the time?
+  - if a little of a thing is good, and a little more is better, what if we did it all the time?
   - pair programming is reviewing code continuously
   - test first and always
   - and other familiar Agile practices
@@ -46,9 +46,16 @@
   - speed of tests
   - etc.
 
-## many others have proposed many ideas over many years to address those costs, in OO, Ruby, Rails, and using functional programming
+## many others have proposed many ideas over many years to address those costs
 
-## dry-rb.org project is using an interesting, simple pattern for an FP-OO blend:  1-method objects
+  - in OO
+  - Ruby
+  - Rails
+  - using functional programming
+  - and more techniques with pros/cons
+
+## dry-rb.org project is using an interesting, simple pattern
+  - an FP-OO blend:  1-method objects
   - some of your objects are already like this:  Sidekiq jobs, some service objects, etc.
 
 ## experiment for you to try
@@ -59,23 +66,23 @@
     interesting places?
 
 ## form
-    * code:
-      - use a lamba or use #call in a single method class; lambdas great for test mocking
-      - write as few lines of code in that method as possible
-      - for arguments and return values, use a limited number, system-wide, of validated value objects
-      - for immutability, output returns a new value of same type or some other type
-      - no side-effects in function, unless for limited number of operation/transaction/action/service objects
-    * db:
-      - fewer attributes per table
+  * code:
+    - use a lamba or use #call in a single method class; lambdas great for test mocking
+    - write as few lines of code in that method as possible
+    - for arguments and return values, use a limited number, system-wide, of validated value objects
+    - for immutability, output returns a new value of same type or some other type
+    - no side-effects in function, unless for limited number of operation/transaction/action/service objects
+  * db:
+    - fewer attributes per table
 
-## make conceptual distinctions, keep sub-dividing concerns (like an amoeba)
+## some other thoughts for the experiment
+  - make conceptual distinctions, keep sub-dividing concerns (like an amoeba)
   - more classes, gems, tables
-
-## separate concerns early and eagerly, since we won't recogize it until too late, cost will be higher, and we deem good ideas too costly to try
-
-## leave behind a trail of objects with little/no need to change, only developing on the leading edge of new functionality/composition values
-
-## editor/filesystem problems:  making object creation, discovery, namespacing, display cheap and pleasant
+  - separate concerns early and eagerly
+    * too late, cost will be higher, and we will exclude some ideas as too costly to try
+  - leave behind a trail of objects with little/no need to change, only developing on the leading edge of new functionality/composition values
+  - configuring your editor / system to make these cheap and pleasant:
+    * object creation, discovery, namespacing, display
 
 ## interesting projects
 
